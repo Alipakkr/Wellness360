@@ -1,8 +1,11 @@
 {
-  "name": "ByteBrains",
+  "name": "bytebrains",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Alipakkr/ByteBrains.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alipakkr/ByteBrains.git"
+  },
   "author": "PrityRastogi16 <surajyoti9839@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -13,5 +16,15 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.0",
     "openai": "^4.28.4"
-  }
+  },
+  "description": "",
+  "bugs": {
+    "url": "https://github.com/Alipakkr/ByteBrains/issues"
+  },
+  "homepage": "https://github.com/Alipakkr/ByteBrains#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "keywords": []
 }

@@ -238,7 +238,9 @@
   justify-content: space-between;
 }
 
-
+.form-control-check label {
+  /* flex: 1; */
+}
 
 .form-control-check input {
   /* flex: 2; */
@@ -269,7 +271,5 @@
 @media screen and (max-width: 1200px) {
   choices {
     height: 800px;
-
-
   }
 }

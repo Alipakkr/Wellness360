@@ -1,0 +1,23 @@
+.Front {
+    display: flex;  
+    align-items: center;
+    background-color: rgb(114, 187, 251);
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    /* border-bottom: 2px solid rgb(54, 54, 135); */
+}
+.company-logo > img{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.company-name{
+    /* color: rgb(217, 10, 51); */
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 20px;
+    color: brown;
+}

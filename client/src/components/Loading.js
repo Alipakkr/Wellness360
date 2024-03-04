@@ -12,7 +12,7 @@ export default function Loading() {
         size="24rem"
         direction="column"
       >
-        <CircularProgress size="10rem" />
+        <CircularProgress size="10rem"  />
       </Stack>
     </div>
   );

@@ -5,8 +5,8 @@
 .App {
   text-align: center;
   display: flex;
-  /* background-color: #282c34; */
-  color: white;
+  background-color: #00040b;
+  color: rgba(249, 244, 244, 0.866);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -18,7 +18,7 @@
   flex: 1;
   position: relative;
   overflow-y: scroll;
-  background: linear-gradient(45deg, #33ccff, #ff99cc);
+  background: rgb(20, 20, 20);
   /* background-image: linear-gradient(
     to right top,
     #051937,
@@ -118,7 +118,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000308;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -238,9 +238,9 @@
   justify-content: space-between;
 }
 
-.form-control-check label {
-  /* flex: 1; */
-}
+/* .form-control-check label {
+  flex: 1;
+} */
 
 .form-control-check input {
   /* flex: 2; */

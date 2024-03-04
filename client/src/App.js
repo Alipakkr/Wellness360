@@ -71,7 +71,8 @@ function App() {
     // console.log(chatLogNew); // used for error checking and see if the string is built correctly
     const messages = chatLogNew;
     // console.log(`http://localhost:${PORT}/`);
-    const response = await fetch(`http://localhost:3080/`, {
+    const response = await fetch(`https://bytebrains.onrender.com/`, {
+     
       method: "POST",
       headers: {
         "Content-Type": "application/json",

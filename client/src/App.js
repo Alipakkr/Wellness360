@@ -71,7 +71,7 @@ function App() {
     // console.log(chatLogNew); // used for error checking and see if the string is built correctly
     const messages = chatLogNew;
     // console.log(`http://localhost:${PORT}/`);
-    const response = await fetch(`/`, {
+    const response = await fetch(`http://localhost:3080/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,9 +84,11 @@ function App() {
       throw error;
     });
     const data = await response.json();
+    console.log(data);
     chatLogNew = "";
     // console.log(data); use this to check feedback from chatGPT
-    let message = data.message.slice(2);
+    let message = data.msgs.slice(2);
+    console.log(message);
     // setChatLog([...chatLogNew, { user: "gpt", message: `${data.message}` }]);
     setChatLog([...chatLogNew, { user: "gpt", message: `${message}` }]);
     setAskGPT((askGPT) => !askGPT);

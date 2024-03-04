@@ -10,11 +10,11 @@ const Footer = () => {
   const ref = React.useRef(null);
 
   const onOpen = () => {
-    window.open("https://github.com/MountainBikerYYC");
+    window.open("https://github.com/Alipakkr/ByteBrains");
   };
 
   const onOpenLinkedIn = () => {
-    window.open("https://www.linkedin.com/in/yuekai-wang-07b129140/");
+    window.open("https://www.linkedin.com/in/alipa-55b365285/");
   };
 
   return (

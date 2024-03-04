@@ -28,18 +28,18 @@ const Footer = () => {
         }}
         elevation={3}
       >
-        <BottomNavigation showLabels sx={{ backgroundColor: "#1976d2" }}>
+        <BottomNavigation showLabels sx={{ backgroundColor: "black" }}>
           <BottomNavigationAction
             label="Github"
             icon={<GitHubIcon />}
             onClick={() => onOpen()}
-            sx={{ color: "white" }}
+            sx={{ color: "orange" }}
           />
           <BottomNavigationAction
             label="LinkedIn"
             icon={<LinkedInIcon />}
             onClick={() => onOpenLinkedIn()}
-            sx={{ color: "white" }}
+            sx={{ color: "orange" }}
           />
         </BottomNavigation>
       </Paper>

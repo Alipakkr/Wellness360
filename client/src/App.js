@@ -137,7 +137,7 @@ function App() {
   return (
     <div className="App">
       <div className="chatbox">
-        <div className="header">
+        <div className="header" >
           <Header />
         </div>
         <div className="choices">
@@ -165,14 +165,14 @@ function App() {
             position="relative"
           >
             <Button
-              style={{ minWidth: 160 }}
+              style={{ minWidth: 160, backgroundColor: "#ff6f00"}}
               variant="contained"
               onClick={newPlan}
             >
               Refresh
             </Button>
             <Button
-              style={{ minWidth: 160 }}
+              style={{ minWidth: 160, backgroundColor: "#ff6f00" }}
               variant="contained"
               onClick={submit}
             >

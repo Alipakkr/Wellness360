@@ -9,6 +9,9 @@ import Alert from "@mui/material/Alert";
 import AlertTitle from "@mui/material/AlertTitle";
 import Modal from "@mui/material/Modal";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
+import { grey } from '@mui/material/colors';
+
+const color = grey[900];
 
 const style = {
   position: "absolute",
@@ -18,7 +21,6 @@ const style = {
   width: 400,
   height: 400,
   bgcolor: "background.paper",
-  border: "1px solid #000",
   boxShadow: 24,
   p: 4,
   borderRadius: 5,
@@ -30,23 +32,25 @@ export default function Header() {
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Box sx={{ flexGrow: 1 }} marginBottom="0px">
-        <AppBar position="static">
+      <Box sx={{ flexGrow: 1,}} marginBottom="0px">
+        <AppBar position="static" style= {{backgroundColor : "black" }}  >
           <Toolbar>
             <Typography
               variant="h4"
               component="div"
               align="center"
               sx={{ flexGrow: 1, marginLeft: "3rem" }}
+              style={{fontFamily : "roboto"}}
+              color= "orange"
             >
-              AI Fitness Coach
+              Wellness360
             </Typography>
             <IconButton
               size="large"
               edge="start"
               color="inherit"
               aria-label="open drawer"
-              sx={{ mr: 2 }}
+              sx={{ mr: 2,  color: "orange"  }}
               onClick={handleOpen}
             >
               <InfoIcon />

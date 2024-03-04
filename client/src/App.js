@@ -3,11 +3,11 @@ import { useState, useEffect } from "react";
 import ChatMessage from "./components/ChatMessage";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import Loading from "./components/Loading";
-import FormDialog from "./components/FormDialog";
+// import Loading from "./components/Loading";
+// import FormDialog from "./components/FormDialog";
 import ChoicesDialog from "./components/ChoicesDialog";
 import Typography from "@mui/material/Typography";
 import Footer from "./components/Footer";
@@ -135,18 +135,18 @@ function App() {
   return (
     <div className="App">
       <div className="chatbox">
-        <div className="header">
+        {/* <div className="header">
           <Header />
-        </div>
+        </div> */}
         <div className="choices">
           <ChoicesDialog onSelect={selectchoiceTesting} />
-          <FormDialog
+          {/* <FormDialog
             onAdd={addMeasurements}
             newplan={clearChatLog}
             onChoose={onChoose}
             onChooseGender={chooseGender}
             generate={submit}
-          />
+          /> */}
         </div>
         <div className="submit-buttons">
           <Stack
@@ -202,7 +202,7 @@ function App() {
                 </Paper>
               </Box>
             )}
-            {askGPT ? (
+            {/* {askGPT ? (
               <Loading />
             ) : (
               <>
@@ -210,7 +210,7 @@ function App() {
                   <ChatMessage key={index} message={message} />
                 ))}
               </>
-            )}
+            )} */}
           </div>
         </Box>
       </div>

@@ -16,7 +16,7 @@ Visual Interface:
 
 User-friendly interface with visual representations for easy navigation.
 
-## Live Deployment: https://wellness360-one.vercel.app/
+# Live Deployment: https://wellness360-one.vercel.app/
 
 ## Project Type
 | Fullstack |

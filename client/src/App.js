@@ -57,12 +57,12 @@ function App() {
     } else {
       string = workout[0];
     }
-    // let chatLogNew = `Give me a", ${string}, "workout`;
-    // let chatLogNew = `Give me a ${string} workout with sets and reps in 4 exercises under 90 minutes for women`;
+    // let chatLogNew = Give me a", ${string}, "workout;
+    // let chatLogNew = Give me a ${string} workout with sets and reps in 4 exercises under 90 minutes for women;
     let chatLogNew;
     // console.log(height, weight, notSay, goalchoice, genderChoice, formFilled);
     if (notSay || !formFilled) {
-      chatLogNew = `Give me a ${string} workout with sets and reps in 4 exercises.`;
+      chatLogNew = Give me a ${string} workout with sets and reps in 4 exercises.;
     } else {
       chatLogNew = `Give me a ${string} workout with sets and reps in 4 exercises
          then calculate the calories needed for a ${genderChoice} who is ${height} centimeters tall 
@@ -70,8 +70,9 @@ function App() {
     }
     // console.log(chatLogNew); // used for error checking and see if the string is built correctly
     const messages = chatLogNew;
-    // console.log(`http://localhost:${PORT}/`);
-    const response = await fetch(`/`, {
+    // console.log(http://localhost:${PORT}/);
+    const response = await fetch(https://bytebrains.onrender.com/, {
+     
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,11 +85,13 @@ function App() {
       throw error;
     });
     const data = await response.json();
+    console.log(data);
     chatLogNew = "";
     // console.log(data); use this to check feedback from chatGPT
-    let message = data.message.slice(2);
-    // setChatLog([...chatLogNew, { user: "gpt", message: `${data.message}` }]);
-    setChatLog([...chatLogNew, { user: "gpt", message: `${message}` }]);
+    let message = data.msgs.slice(2);
+    console.log(message);
+    // setChatLog([...chatLogNew, { user: "gpt", message: ${data.message} }]);
+    setChatLog([...chatLogNew, { user: "gpt", message: ${message} }]);
     setAskGPT((askGPT) => !askGPT);
     setReceivedData(true);
   }
@@ -135,18 +138,18 @@ function App() {
   return (
     <div className="App">
       <div className="chatbox">
-        {/* <div className="header">
+        <div className="header" >
           <Header />
-        </div> */}
+        </div>
         <div className="choices">
           <ChoicesDialog onSelect={selectchoiceTesting} />
-          {/* <FormDialog
+          <FormDialog
             onAdd={addMeasurements}
             newplan={clearChatLog}
             onChoose={onChoose}
             onChooseGender={chooseGender}
             generate={submit}
-          /> */}
+          />
         </div>
         <div className="submit-buttons">
           <Stack
@@ -163,14 +166,14 @@ function App() {
             position="relative"
           >
             <Button
-              style={{ minWidth: 160 }}
+              style={{ minWidth: 160, backgroundColor: "#ff6f00"}}
               variant="contained"
               onClick={newPlan}
             >
               Refresh
             </Button>
             <Button
-              style={{ minWidth: 160 }}
+              style={{ minWidth: 160, backgroundColor: "#ff6f00" }}
               variant="contained"
               onClick={submit}
             >
@@ -202,7 +205,7 @@ function App() {
                 </Paper>
               </Box>
             )}
-            {/* {askGPT ? (
+            {askGPT ? (
               <Loading />
             ) : (
               <>
@@ -210,7 +213,7 @@ function App() {
                   <ChatMessage key={index} message={message} />
                 ))}
               </>
-            )} */}
+            )}
           </div>
         </Box>
       </div>

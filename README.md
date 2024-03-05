@@ -24,21 +24,21 @@ User-friendly interface with visual representations for easy navigation.
 
 ## Directory Structure
 
-my-app/
-├─ node_modules/
-├─ public/
-├─ src/
-│  ├─ assets/
-│  ├─ components/
-│  ├─ pages/
-│  ├─ routes/
-│  ├─ util/
-│  ├─ index.js
-├─ .env
-├─ .gitignore
-├─ package.json
-├─ package.lock.json
-├─ tailwind.config.json
+ ## my-app/
+  ## ├─ node_modules/
+  ## ├─ public/
+  ## ├─ src/
+  ## │  ├─ assets/
+  ## │  ├─ components/
+  ## │  ├─ pages/
+  ## │  ├─ routes/
+  ## │  ├─ util/
+  ## │  ├─ index.js
+  ## ├─ .env
+  ## ├─ .gitignore
+  ## ├─ package.json
+  ## ├─ package.lock.json
+  ## ├─ tailwind.config.json
 
 ## Design Decisions or Assumptions
 - *Mobile-First Design:* The application is designed with a mobile-first approach for accessibility.
@@ -63,4 +63,28 @@ my-app/
 - design: tailwind css
 - External APIs: OpenAI GPT-3
 
+## Team Members 
+### Alipa(Team Lead )
+[![profile](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Alipakkr)
 
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alipa-55b365285/)
+
+### Anjali Pandey 
+[![profile](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/KumariAnjali40 )
+
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kumarianjali9051/)
+
+### PrityRastogi16 
+[![profile](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/PrityRastogi16 )
+
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/prity-rastogi/)
+
+### Heena Parveen
+[![profile](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/parveenheena )
+
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/heena-parveen25/)
+
+### ShyamGopal
+[![profile](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/S-G-Biswas )
+
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shyamgopal-biswas/)

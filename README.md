@@ -1,5 +1,5 @@
 # ByteBrains
- ## Key Features
+## Key Features
 Goal Customization:
 
 Users can select their fitness goals, including fat loss, muscle gain, or body shaping.
@@ -15,32 +15,52 @@ The application interacts with ChatGPT in real-time to generate personalized wor
 Visual Interface:
 
 User-friendly interface with visual representations for easy navigation.
-Live Deployment:
+
+## Live Deployment: https://wellness360-one.vercel.app/
+
+## Project Type
+| Fullstack |
 
 
-## How to Install or Run Locally
-Clone the Repository:
-bash
-Copy code
-git clone https://github.com/your-username/ai-fitness-coach.git
-Navigate to the Project Directory:
+## Directory Structure
 
-bash
-Copy code
-cd ai-fitness-coach
-Install Dependencies:
+my-app/
+├─ node_modules/
+├─ public/
+├─ src/
+│  ├─ assets/
+│  ├─ components/
+│  ├─ pages/
+│  ├─ routes/
+│  ├─ util/
+│  ├─ index.js
+├─ .env
+├─ .gitignore
+├─ package.json
+├─ package.lock.json
+├─ tailwind.config.json
 
-Copy code
-pip install -r requirements.txt
-Run the Application:
+## Design Decisions or Assumptions
+- *Mobile-First Design:* The application is designed with a mobile-first approach for accessibility.
+- *User-Friendly Interface:* Prioritizing a clean and intuitive user interface for ease of use.
+  
+## Installation & Getting Started
+- Clone the repository.
+- create .env file. Add your own openAPI key and real time finance data API.
+- *Start the frontend:* npm run start (in the frontend directory).
+  
+## Usage
+- Visit the deployed frontend link and explore the various features.
 
-Copy code
-python app.py
-Open in Browser:
+## APIs Used
+- *OpenAI:* OpenAI GPT-3 API for AI-driven assistance.
+  
+## API Endpoints
+- POST /-  Give you exercise data
 
-Visit http://localhost:5000/ in your web browser.
- ## Feedback and Contributions
-Feel free to open issues or contribute to the project. Your feedback is valuable to us!
+## Technology Stack
+- Frontend: React.js
+- design: tailwind css
+- External APIs: OpenAI GPT-3
 
- ## License
-This project is licensed under the MIT License.
+
